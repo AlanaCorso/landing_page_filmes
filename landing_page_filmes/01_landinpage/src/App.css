@@ -1,0 +1,324 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 2.3%;
+  background: #000;
+  overflow: hidden;
+}
+
+.header {
+  height: 114px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 28px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: #fff;
+}
+
+.nav-links {
+  position: absolute;
+  left: 53%;
+  top: 49px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: #aaa;
+}
+
+.login-button {
+  width: 113px;
+  height: 46px;
+  background: #1000ff;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.main-content {
+  width: 100%;
+  min-height: calc(100vh - 114px);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.intro {
+  width: 100%;
+  padding-right: 35px;
+  transform: translateY(5px);
+}
+
+.intro h1 {
+  margin: 0 0 25px;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.description {
+  color: #929292;
+}
+
+.intro p {
+  margin: 0;
+  color: #929292;
+  font-size: 22px;
+  line-height: 1.55;
+}
+
+.more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 108px;
+  height: 46px;
+  margin-top: 36px;
+  background: #1000ff;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.more-button:hover,
+.login-button:hover {
+  background: #3024ff;
+}
+
+.movies {
+  width: 100%;
+  padding-left: 0;
+  transform: translateY(8px);
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px 23px;
+  width: 100%;
+}
+
+.movie-card {
+  width: 100%;
+  min-width: 0;
+  height: 197px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #111;
+}
+
+.movie-poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  transition: transform 0.25s;
+}
+
+.movie-card:hover .movie-poster {
+  transform: scale(1.04);
+}
+
+.footer {
+  display: none;
+}
+
+@media (min-width: 1500px) {
+  .movie-card {
+    height: 220px;
+  }
+
+  .movie-grid {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .app-container {
+    padding: 0 3%;
+  }
+
+  .nav-links {
+    left: 52%;
+    gap: 22px;
+  }
+
+  .main-content {
+    grid-template-columns: 38% 62%;
+  }
+
+  .intro h1 {
+    font-size: 40px;
+  }
+
+  .intro p {
+    font-size: 17px;
+  }
+
+  .movie-grid {
+    gap: 15px;
+  }
+
+  .movie-card {
+    height: 155px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    height: 85px;
+    align-items: flex-start;
+    padding-top: 22px;
+  }
+
+  .logo {
+    font-size: 29px;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin: 3px 0 0 auto;
+    padding: 0 12px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 27px;
+  }
+
+  .login-button {
+    width: 76px;
+    height: 38px;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    transform: none;
+    z-index: 10;
+    width: 100%;
+    padding: 20px;
+    background: #111;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 60px 0 35px;
+    gap: 55px;
+  }
+
+  .intro {
+    padding: 0;
+    transform: none;
+  }
+
+  .intro h1 {
+    font-size: 39px;
+    margin-bottom: 20px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .more-button {
+    margin-top: 25px;
+  }
+
+  .movies {
+    transform: none;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .movie-card {
+    height: auto;
+    aspect-ratio: 1.57 / 1;
+    border-radius: 9px;
+  }
+
+  .movie-poster {
+    border-radius: 9px;
+  }
+}
