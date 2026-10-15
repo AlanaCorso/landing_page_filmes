@@ -15,7 +15,7 @@ Uma experiência cinematográfica para explorar filmes e descobrir novas histór
 
 <br/>
 
-**[🎥 Explorar projeto](#-sobre-o-projeto) · [⚙️ Instalação](#-como-executar) · [📁 Estrutura](#-estrutura-do-projeto)**
+**[🎥 Explorar projeto](#-sobre-o-projeto) · [⚙️ Instalação](#️-como-executar) · [📁 Estrutura](#-estrutura-do-projeto)**
 
 </div>
 
