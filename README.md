@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🎬 MovieCity
 
 ### `YOUR NEXT MOVIE STARTS HERE.`
@@ -31,7 +33,9 @@ Com fundo preto, tipografia marcante, botões azuis e pôsteres em destaque, o p
 
 <div align="center">
 
-<img src="Landing_Page.png" alt="Visual da landing page MovieCity" width="100%"/>
+<p align="center">
+  <img src="01_landingpage/resultado.png" alt="MovieCity" width="100%">
+</p>
 
 **Uma interface simples. Uma experiência cinematográfica.**
 
