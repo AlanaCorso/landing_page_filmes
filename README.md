@@ -34,7 +34,7 @@ Com fundo preto, tipografia marcante, botões azuis e pôsteres em destaque, o p
 <div align="center">
 
 <p align="center">
-  <img src="01_landingpage/resultado.png" alt="MovieCity" width="100%">
+  <img src="./landing_page_filmes/resultado.png" alt="MovieCity" width="100%">
 </p>
 
 **Uma interface simples. Uma experiência cinematográfica.**
